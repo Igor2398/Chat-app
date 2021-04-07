@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<head>
+    <title>Chat app</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+</head>
+<body style="background-image: url('/images/vectorstock_1265483.png');">
+    <a href="https://www.vectorstock.com/royalty-free-vector/sky-pattern-vector-1265483">Sky pattern vector by stolenpencil</a>
+    <div class="container">
+        <h1 style="text-align: center; margin-bottom: 10vh; font-size: 10vh; font-style: italic;">Chat app</h1>
+
+        <div class="card">
+            <div class="card-header"><b>Your username:</b> Anonymous</div>
+            <div class="card-body">
+                <div class="input-group">
+                    <input type="text" class="form-control" id="username" placeholder="Change your username">
+                    <div class="input-group-append">
+                        <button class="btn btn-danger" type="button" id="usernameBtn">Change</button>
+                    </div>
+                </div>
+            </div>
+            <div class="message-box">
+                <ul class="list-group list-group-flush" id="message-list"></ul>
+                <div class="info"></div>
+            </div>
+            
+            <div class="card-footer">
+                <div class="input-group">
+                    <input type="text" class="form-control" id="message" placeholder="Send new message">
+                    <div class="input-group-append">
+                        <button class="btn btn-primary" type="button" id="messageBtn">Send</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.0.1/socket.io.js"></script>
+    <script src="/js/chatroom.js"></script>
+</body>
+</html>
